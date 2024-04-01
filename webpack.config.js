@@ -8,9 +8,9 @@ module.exports = {
     mode: 'production',
     entry: {
         main: './index.js', 
-        index1: './src/directory_scss/index1.scss', 
-        news: './src/directory_scss/news.scss',
-        photo: './src/directory_scss/photo/photo.scss',
+        index1: './src/directory_scss/index1.less', 
+        news: './src/directory_scss/news.less',
+        photo: './src/directory_scss/photo/photo.less',
         rozklad: './src/directory_scss/rozklad/rozklad.scss'
     },
     output: {
@@ -25,6 +25,22 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
+                ],
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'less-loader',
+                ],
+            },
+            {
+                test: /\.styl$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'stylus-loader',
                 ],
             },
         ],

@@ -4,94 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расписание</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 1200px;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2; 
-        }
-
-        td:nth-child(odd) {
-            background-color: #f0f0f0; 
-        }
-
-        td:nth-child(even) {
-            background-color: #e0e0e0; 
-        }
-    </style>
+    <link rel="stylesheet" href="rozklad.css">
 </head>
 <body>
-    <h1>Личная страница (блог) Самолук Владимир Игоревич</h1>
-    <ul>
+    <div class="container">
+    <h1 class="main-title">Личная страница (блог) Самолук Владимир Игоревич</h1>
+    <ul class="navigation">
         <li><a href="index.html">Главная страница</a></li>
         <li><a href="photo.html">Фотоальбом</a></li>
         <li><a href="news.html">Последние новости</a></li>
-        <li><a>Видео</a></li>
     </ul>
-    <h1>Расписание</h1>
-    <table border="1" width="1200px">
-        <thead>
-            <tr>
-                <th>Понедельник</th>
-                <th>Вторник</th>
-                <th>Среда</th>
-                <th>Четверг</th>
-                <th>Пятница</th>
-                <th>Суббота</th>
-                <th>Воскресенье</th>
-
-            </tr>
-        </thead>
-        <tbody align="center">
-            <tr>
-                <td>Основы програмной инженерии</td>
-                <td>Технологии и протоколы интернет</td>
-                <td>Основы DevOps</td>
-                <td> </td>
-                <td>Системы виртуализации и контенерезации</td>
-                <td>Английский</td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Технологии и протоколы интернет</td>
-                <td>Основы автоматичекого проэктирования сложных систем</td>
-                <td> </td>
-                <td>Системы програмной инженерии</td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>Основы DevOps</td>
-                <td></td>
-                <td>Системы виртуализации и контенерезации</td>
-                <td></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>Основы автоматичекого проэктирования сложных систем</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td> </td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Преподаватели</h2>
-    <ol>
+    <h1 class="raspisanie">Расписание</h1>
+<table class="schedule-table">
+    <thead>
+        <tr>
+            <th>Понедельник</th>
+            <th>Вторник</th>
+            <th>Среда</th>
+            <th>Четверг</th>
+            <th>Пятница</th>
+            <th>Суббота</th>
+            <th>Воскресенье</th>
+        </tr>
+    </thead>
+    <tbody class="schedule-body" align="center">
+        <tr>
+            <td class="subject">Основы програмной инженерии</td>
+            <td class="subject">Технологии и протоколы интернет</td>
+            <td class="subject">Основы DevOps</td>
+            <td class="empty"></td>
+            <td class="subject">Системы виртуализации и контенерезации</td>
+            <td class="subject">Английский</td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="subject">Технологии и протоколы интернет</td>
+            <td class="subject">Основы автоматичекого проэктирования сложных систем</td>
+            <td class="empty"></td>
+            <td class="subject">Системы програмной инженерии</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="subject">Основы DevOps</td>
+            <td class="empty"></td>
+            <td class="subject">Системы виртуализации и контенерезации</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="subject">Основы автоматичекого проэктирования сложных систем</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+    </tbody>
+</table>
+    <h2 class="prepodavateli">Преподаватели</h2>
+    <ol class="prepodavateli_list">
         <li>Лисняк А.О.</li>
         <li>Панасенко Є.В.</li>
         <li>Гоменюк С.И.</li>
@@ -100,6 +76,6 @@
         <li>Мухин В.В.</li>
         <li>Мурко И.И.</li>
     </ol>
-
+</div>
 </body>
 </html>

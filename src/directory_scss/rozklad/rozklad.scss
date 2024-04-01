@@ -1,0 +1,72 @@
+body {
+    background-image: linear-gradient(to right, #009999, #1D7373, #006363, #33CCCC, #5CCCCC);
+        
+    }
+    .container {
+    width: 80%;
+     margin: 0 auto;
+     padding: 20px; 
+    }
+    .main-title {
+    color:#0f1b1b;
+    text-align: center;
+    }
+    
+    .navigation {
+    color:#1b2e3d;
+    text-align: center;
+    }
+    
+    .navigation li {
+    color: #3217ca;
+    display:inline-flex;
+    margin-right: 20px;
+    }
+    .navigation li a{
+    color: #121f38;
+    font-size: 20px;
+    text-decoration: none;
+    }
+    .navigation li a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #1D7373;
+    padding: 5px 10px;
+    border-radius: 35px;
+    
+    }
+    
+    .raspisanie {
+    color:#1b2e3d;
+    text-align: center;
+    }
+    .schedule-table {
+        background-color: #f2f2f2;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .schedule-table th, .schedule-table td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+    .schedule-table tbody tr:nth-child(2n) td {
+        background-color: #cbdbdb;
+    }
+    .prepodavateli{
+    color:#1b2e3d;
+    text-align: left;
+    }
+    
+    .prepodavateli_list {
+        list-style-type: none;
+        padding: 0;
+        
+    }
+    
+    .prepodavateli_list li {
+        color: #010203;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }

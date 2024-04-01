@@ -5,24 +5,30 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'development',
-    entry: './src/index.js',
+    mode: 'production',
+    entry: {
+        main: './index.js', 
+        index1: './src/directory_scss/index1.scss', 
+        news: './src/directory_scss/news.scss',
+        photo: './src/directory_scss/photo/photo.scss',
+        rozklad: './src/directory_scss/rozklad/rozklad.scss'
+    },
     output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
+        path: path.resolve(__dirname, './dist'),
+        filename: '[name].bundle.js',
     },
     module: {
         rules: [
             {
-              test: /\.scss$/,
-              use: [
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-              ],
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                ],
             },
-          ],
-        },
+        ],
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
@@ -50,12 +56,8 @@ module.exports = {
                 { from: 'src/assets/images', to: 'assets/images' }
             ]
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin({
+            filename: '[name].css', 
+        }),
     ],
-    devServer: {
-        static: {
-            directory: path.join(__dirname, 'src'),
-        },
-        open: true,
-    },
 };

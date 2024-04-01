@@ -1,0 +1,59 @@
+body {
+background-image: linear-gradient(to right, #009999, #1D7373, #006363, #33CCCC, #5CCCCC);
+    
+}
+.container {
+width: 80%;
+ margin: 0 auto;
+ padding: 20px; 
+}
+.main-title {
+color:#0f1b1b;
+text-align: center;
+}
+
+.navigation {
+color:#1b2e3d;
+text-align: center;
+}
+
+.navigation li {
+color: #3217ca;
+display:inline-flex;
+margin-right: 20px;
+}
+.navigation li a{
+color: #121f38;
+font-size: 20px;
+text-decoration: none;
+}
+.navigation li a:hover {
+color: black;
+text-decoration: none;
+background-color: #1D7373;
+padding: 5px 10px;
+border-radius: 35px;
+
+}
+.photo{
+display: block; 
+margin: 0 auto; 
+border: 2px solid #314b4b;
+margin-top: 10px; 
+margin-bottom: 10px; 
+}
+.Mybio {
+color: #1b2e3d;
+text-align: center;
+}
+
+.author {
+text-align: center;
+color: #19b648;
+}
+
+
+.hobby {
+text-align: center;
+color: #121f38;
+}
